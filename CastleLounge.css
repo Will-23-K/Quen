@@ -251,7 +251,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('../h11.jpg') no-repeat center center/cover;
+    background: url('h11.jpg') no-repeat center center/cover;
     color: white;
     padding-top: 80px;
     overflow: hidden;
