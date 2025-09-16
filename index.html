@@ -13,21 +13,27 @@
     <meta property="og:image" content="https://quenlinblackwell.com/images/social-share.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <title>Willy Kekae | Model · Comedian · Creative Director</title>
+
     <link rel="stylesheet" href="CastleLounge.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
 
+    <!-- Preload hero background for faster load -->
+    <link rel="preload" as="image" href="covers/grunge edited/butt.webp">
+</head>
 
 <body>
 
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
-         <div class="left-section">
-                <img class="header-img" src="covers/grunge edited/butt.jpg" alt="Quenlin Blackwell Logo">
+            <div class="left-section">
+                <picture>
+                    <source srcset="covers/grunge edited/butt.webp" type="image/webp">
+                    <img class="header-img" src="covers/grunge edited/butt.jpg" alt="Quenlin Blackwell Logo" width="150" height="auto">
+                </picture>
             </div>
             <div class="logo">
                 <span class="logo-main">WILLY</span>
@@ -50,11 +56,16 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-overlay"><img class="background" src="covers/grunge edited/butt.jpg">  </div>
+        <div class="hero-overlay">
+            <picture>
+                <source srcset="covers/grunge edited/butt.webp" type="image/webp">
+                <img class="background" src="covers/grunge edited/butt.jpg" alt="Hero background" width="1600" height="900">
+            </picture>
+        </div>
         <div class="container">
             <div class="hero-content">
                 <h1>WILLY KEKAE</h1>
-                <h2>Model · Creative Director </h2>
+                <h2>Model · Creative Director</h2>
                 <p class="hero-description">A dynamic force in entertainment, Willy brings unapologetic authenticity and razor-sharp wit to every project. From viral content to high-fashion runways, he is redefining what it means to be a modern multi-hyphenate.</p>
                 <a href="#about" class="btn btn-hero">Discover Willy's World <i class="fas fa-arrow-right"></i></a>
             </div>
@@ -67,7 +78,7 @@
             <h2 class="section-title">WHO IS WILLY?</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Willy  Kekae is a digital renaissance man - a comedian who makes you snort-laugh, a model who stops scrolls, a creative director who commands attention, and a business mind building an empire.</p>
+                    <p>Willy Kekae is a digital renaissance man - a comedian who makes you snort-laugh, a model who stops scrolls, a creative director who commands attention, and a business mind building an empire.</p>
                     <p>From Facebook fame to fashion campaigns, Willy's journey is a masterclass in authentic personal branding and relentless creativity.</p>
                     <div class="about-stats">
                         <div class="stat">
@@ -78,14 +89,17 @@
                             <div class="stat-number" data-count="3252">+</div>
                             <div class="stat-label"> Followers</div>
                         </div>
-                       <div class="stat">
+                        <div class="stat">
                             <div class="stat-number" data-count="1">+</div>
                             <div class="stat-label">Editorial</div>
                         </div> 
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="covers/grunge edited/lipstick.jpg" alt="Willy Kekae portrait" loading="lazy">
+                    <picture>
+                        <source srcset="covers/grunge edited/lipstick.webp" type="image/webp">
+                        <img src="covers/grunge edited/lipstick.jpg" alt="Willy Kekae portrait" loading="lazy" width="600" height="800">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -96,29 +110,63 @@
         <div class="container">
             <h2 class="section-title">WILLY'S WORLD</h2>
             
-            <!-- Birthday Shots-->
+            <!-- Grunge Editorial -->
             <div class="showcase-block">
-                <h3 class="showcase-subtitle"><span>GRUNGE  </span>EDITORIAL</h3>
+                <h3 class="showcase-subtitle"><span>GRUNGE</span> EDITORIAL</h3>
                 <div class="showcase-container">
+
+                    <!-- Example art-item with WebP + lazy loading + srcset -->
                     <div class="art-item">
-                        <img src="covers/grunge edited/cool.jpg" alt="Model: Willy Kekae , Creative Director: Willy Kekae" class="art-image">
+                        <picture>
+                            <source srcset="covers/grunge edited/cool.webp" type="image/webp">
+                            <img 
+                                src="covers/grunge edited/cool.jpg" 
+                                srcset="
+                                    covers/grunge edited/cool-400.jpg 400w,
+                                    covers/grunge edited/cool-800.jpg 800w,
+                                    covers/grunge edited/cool-1200.jpg 1200w" 
+                                sizes="(max-width: 600px) 400px, (max-width: 900px) 800px, 1200px"
+                                alt="Model: Willy Kekae , Creative Director: Willy Kekae" 
+                                class="art-image" 
+                                loading="lazy">
+                        </picture>
                         <p class="art-title">Model: Willy Kekae <br> Creative Director: Willy Kekae</p>
                     </div>
+
+                    <!-- Repeat for other images -->
                     <div class="art-item">
-                        <img src="covers/grunge edited/cool2.jpg" alt="Model: Willy Kekae , Creative Director: Willy Kekae" class="art-image">
+                        <picture>
+                            <source srcset="covers/grunge edited/cool2.webp" type="image/webp">
+                            <img src="covers/grunge edited/cool2.jpg" alt="Model: Willy Kekae , Creative Director: Willy Kekae" class="art-image" loading="lazy">
+                        </picture>
                         <p class="art-title">Model: Willy Kekae <br> Creative Director: Willy Kekae</p>
                     </div>
+
                     <div class="art-item">
-                        <img src="covers/grunge edited/cool3.jpg" alt="Model: Willy Kekae , Creative Director: Willy Kekae" class="art-image">
+                        <picture>
+                            <source srcset="covers/grunge edited/cool3.webp" type="image/webp">
+                            <img src="covers/grunge edited/cool3.jpg" alt="Model: Willy Kekae , Creative Director: Willy Kekae" class="art-image" loading="lazy">
+                        </picture>
                         <p class="art-title">Model: Willy Kekae <br> Creative Director: Willy Kekae</p>
                     </div>
+
                     <div class="art-item">
-                        <img src="covers/grunge edited/cool4.jpg" alt="Model: Willy Kekae , Creative Director: Willy Kekae" class="art-image">
+                        <picture>
+                            <source srcset="covers/grunge edited/cool4.webp" type="image/webp">
+                            <img src="covers/grunge edited/cool4.jpg" alt="Model: Willy Kekae , Creative Director: Willy Kekae" class="art-image" loading="lazy">
+                        </picture>
                         <p class="art-title">Model: Willy Kekae <br> Creative Director: Willy Kekae</p>
                     </div>
                 </div>
-                <h3 class="showcase-subtitle"><button class="btn btn-hero" onclick="window.open('grunge-editorial.html')">VIEW FULL  EDITORIAL</button></h3>
-            </div> 
+
+                <h3 class="showcase-subtitle">
+                    <button class="btn btn-hero" onclick="window.open('grunge-editorial.html')">VIEW FULL EDITORIAL</button>
+                </h3>
+            </div>
+        </div>
+    </section>
+
+
 
             <!-- FSC Videos 
             <div class="showcase-block">
@@ -326,4 +374,5 @@
     <script src="CastleLounge.js"></script>
 
 </body>
+
 </html>
